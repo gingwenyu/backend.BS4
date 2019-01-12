@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>list</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <script src="JS/list.js"></script>  
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Go!</button>
+    </form>
+    <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" data-title="快速下單" data-target="#editModal">快速下單</button>
+  </nav>
+
+  <div class="container-fluid px-4 mt-4">
+    <table class="table table-hover">
+      <!--table-responsive-->
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col" width="30%">品項</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Status</th>
+          <th scope="col" class="text-right">金額</th>
+          <th scope="col" class="text-center">操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>超纖細肥皂 1盒</td>
+          <td>Mark<span class="badge badge-pill badge-danger">奧客</span></td>
+          <td>Mark@mail.com</td>
+          <td>已出貨</td>
+          <td class="text-right">NT$ 899</td>
+          <td>
+            <div class="btn-group btn-group-sm d-flex justify-content-center" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-title="編輯 超纖細肥皂 1盒"
+                data-name="Mark" data-email="Mark@mail.com" data-backdrop="static" data-target="#editModal">編輯</button>
+              <button type="button" class="btn btn-outline-secondary">查看</button>
+
+              <div class="btn-group btn-group-sm" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  ...
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#">操作記錄</a>
+                  <a class="dropdown-item" href="#">資料匯出</a>
+                  <hr>
+                  <a class="dropdown-item text-danger" href="#" data-toggle="modal" data-title="刪除訂單 超纖細肥皂 1盒"
+                    data-name="Mark" data-email="Mark@mail.com" data-backdrop="static" data-target="#removeModal">刪除訂單</a>
+                </div>
+              </div>
+            </div>
+
+          </td>
+        </tr>
+        <tr class="table-danger">
+          <th scope="row">2</th>
+          <td>(保證)無泡泡沐浴乳 5罐</td>
+          <td>Jacob<span class="badge badge-pill badge-success">常客</span></td>
+          <td>Jacob@mail.com</td>
+          <td class="text-danger">缺貨</td>
+          <td class="text-right">NT$ 3,600</td>
+          <td>
+            <div class="btn-group btn-group-sm d-flex justify-content-center" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-title="編輯 (保證)無泡泡沐浴乳 5罐"
+                data-name="Jacob" data-email="Jacob@mail.com" data-backdrop="static" data-target="#editModal">編輯</button>
+              <button type="button" class="btn btn-outline-secondary">查看</button>
+
+              <div class="btn-group btn-group-sm" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  ...
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#">操作記錄</a>
+                  <a class="dropdown-item" href="#">資料匯出</a>
+                  <hr>
+                  <a class="dropdown-item text-danger" href="#" data-toggle="modal" data-title="刪除訂單 (保證)無泡泡沐浴乳 5罐"
+                    data-name="Jacob" data-email="Jacob@mail.com" data-backdrop="static" data-target="#removeModal">刪除訂單</a>
+                </div>
+              </div>
+            </div>
+
+          </td>
+        </tr>
+        <tr id="item3">
+          <th scope="row">3</th>
+          <td>舒適型工作手套 35個</td>
+          <td>Larry</td>
+          <td>Larry@mail.com</td>
+          <td>出貨中</td>
+          <td class="text-right">NT$ 14,060</td>
+          <td>
+            <div class="btn-group btn-group-sm d-flex justify-content-center" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-title="編輯 舒適型工作手套 35個"
+                data-name="Larry" data-email="Larry@mail.com" data-backdrop="static" data-target="#editModal">編輯</button>
+              <button type="button" class="btn btn-outline-secondary">查看</button>
+
+              <div class="btn-group btn-group-sm" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  ...
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#">操作記錄</a>
+                  <a class="dropdown-item" href="#">資料匯出</a>
+                  <hr>
+                  <a class="dropdown-item text-danger" href="#" data-toggle="modal" data-title="刪除訂單 舒適型工作手套 35個"
+                    data-name="Larry" data-email="Larry@mail.com" data-backdrop="static" data-target="#removeModal">刪除訂單</a>
+                </div>
+              </div>
+            </div>
+
+          </td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td colspan="7" id="pro3">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 14.285%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">訂單成立</div>
+              <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 14.285%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">已付款</div>
+              <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 14.285%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">出貨中</div>
+              <div class="progress-bar progress-bar bg-light text-dark" role="progressbar" style="width: 14.285%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">待收貨</div>
+              <div class="progress-bar progress-bar bg-light text-dark" role="progressbar" style="width: 14.285%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">已完成</div>
+              <div class="progress-bar progress-bar bg-light text-dark" role="progressbar" style="width: 14.285%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">已取消</div>
+              <div class="progress-bar progress-bar bg-light text-dark" role="progressbar" style="width: 14.285%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">申請退貨/退款</div>
+            </div>
+          </td>
+
+        </tr>
+        <tr>
+          <th scope="row">...</th>
+          <td colspan="6"></td>
+        </tr>
+        <tr>
+          <th scope="row">...</th>
+          <td colspan="6"></td>
+        </tr>
+        <tr>
+          <th scope="row">...</th>
+          <td colspan="6"></td>
+        </tr>
+        <tr>
+          <th scope="row">...</th>
+          <td colspan="6"></td>
+        </tr>
+        <tr>
+          <th scope="row">...</th>
+          <td colspan="6"></td>
+        </tr>
+        <tr>
+          <th scope="row">...</th>
+          <td colspan="6"></td>
+        </tr>
+        <tr>
+          <th scope="row">...</th>
+          <td colspan="6"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination d-flex justify-content-center">
+        <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+        <li class="page-item active"><a class="page-link" href="list.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <footer class="bg-light py-3">
+    <p class="text-secondary text-center mb-0">HexSchool後台管理系統</p>
+  </footer>
+
+
+  <!-- editModal -->
+  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <form class="modal-content needs-validation" novalidate>
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-group">
+            Name<input type="text" class="form-control" id="exampleInputName" placeholder="Name" required>
+            <div class="valid-feedback">
+              <i class="far fa-check-circle fa-2x"></i>
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid name.
+            </div>
+          </div>
+          <div class="form-group">
+            Email<input type="email" class="form-control" id="exampleInputEmail" placeholder="Email" required>
+            <div class="valid-feedback">
+              <i class="far fa-check-circle fa-2x"></i>
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid email.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              品項<input type="text" class="form-control" placeholder="品項" required>
+              <div class="valid-feedback">
+                <i class="far fa-check-circle fa-2x"></i>
+              </div>
+              <div class="invalid-feedback">
+                Please provide a valid item name.
+              </div>
+            </div>
+            <div class="col-6">
+              數量<input type="number" class="form-control" placeholder="數量" required>
+              <div class="valid-feedback">
+                <i class="far fa-check-circle fa-2x"></i>
+              </div>
+              <div class="invalid-feedback">
+                Please provide a valid number.
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- removeModal -->
+  <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-danger">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="text-white">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              Name<input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+            </div>
+            <div class="form-group">
+              Email<input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+            </div>
+            <div class="row">
+              <div class="col">
+                品項<input type="text" class="form-control" placeholder="品項">
+              </div>
+              <div class="col">
+                數量<input type="number" class="form-control" placeholder="數量">
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>  
+</body>
+
+</html>

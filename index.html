@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>index</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <script src="JS/index.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="#">
+    <a class="navbar-brand" href="index.html">商務控制後台</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">首頁
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="list.html">列表</a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row mt-4">
+      <div class="col-lg-3 col-6">
+        <div class="card h-100">
+          <div class="card-body d-flex align-items-center">
+            <i class="fas fa-money-check-alt fa-3x"></i>
+            <div class="text-center mx-auto w-100">
+              <p class="card-title h6">今日營收</p>
+              <p class="card-text h4">192000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <div class="card">
+          <div class="card-body d-flex align-items-center">
+            <i class="fas fa-users fa-3x"></i>
+            <div class="text-center mx-auto w-100">
+              <p class="card-title h6">會員增加</p>
+              <p class="card-text display-4">172</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <div class="card">
+          <div class="card-body d-flex align-items-center">
+            <i class="far fa-copy fa-3x"></i>
+            <div class="text-center mx-auto w-100">
+              <p class="card-title h6">訂單數</p>
+              <p class="card-text display-4">320</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <div class="card">
+          <div class="card-body d-flex align-items-center">
+            <i class="fas fa-archive fa-3x"></i>
+            <div class="text-center mx-auto w-100">
+              <p class="card-title h6">待出貨數</p>
+              <p class="card-text display-4">120</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid px-4">
+    <div class="row">
+      <div class="col-md-4 mt-4">
+        <div class="card h-100">
+          <div class="card-body text-center d-flex flex-column justify-content-center">
+            <p class="card-title h6">目前線上人數</p>
+            <p class="card-text display-4 pb-4">99</p>
+            <div class="progress">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 30%">桌機30%</div>
+              <div class="progress-bar bg-info" role="progressbar" style="width: 60%">行動裝置60%</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-8 mt-4">
+        <div class="card mb-3">
+          <div class="card-header bg-light h6">新進訂單</div>
+          <div class="card-body pb-0">
+            <div class="d-flex justify-content-end"><button type="button" class="btn btn-outline-secondary btn-sm mb-3">訂單管理</button></div>
+            <table class="table table-hover">
+              <!--table-responsive-->
+              <thead>
+                <tr>
+                  <th scope="col">來源</th>
+                  <th scope="col">姓名</th>
+                  <th scope="col">貨品</th>
+                  <th scope="col" colspan="2" class="text-right">價格</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">Youtube</td>
+                  <td>喜多郎</td>
+                  <td>六角和牛排</td>
+                  <td colspan="2" class="text-right">3000</td>
+                </tr>
+                <tr>
+                  <td scope="row">Youtube</td>
+                  <td>喜多郎</td>
+                  <td>六角喜餅</td>
+                  <td colspan="2" class="text-right">2000</td>
+                </tr>
+                <tr>
+                  <td scope="row">Youtube</td>
+                  <td>喜多郎</td>
+                  <td>六角雞胸</td>
+                  <td colspan="2" class="text-right">1500</td>
+                </tr>
+                <tr>
+                  <td scope="row">Youtube</td>
+                  <td>喜多郎</td>
+                  <td>六角T Shirt</td>
+                  <td colspan="2" class="text-right">2000</td>
+                </tr>
+                <tr class="text-right">
+                  <td colspan="4">總營收</td>
+                  <td>10500</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid px-4">
+    <div class="row">
+      <div class="col-md-8 mt-4">
+        <div class="card">
+          <div class="card-header">用戶來源 </div>
+          <div class="card-body row">
+            <div class="col-md-8">
+              <canvas id="barCanvas"></canvas>
+            </div>
+            <div class="col-md-4">
+              <p class="card-title h5">Details</p>
+              <p class="card-text h6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ab perferendis
+                ipsam beatae perspiciatis sequi voluptas quis quod accusamus vitae? Expedita rerum deserunt perferendis
+                quidem dicta sequi? Harum, saepe aliquam?</p>
+              <p class="h6">Google 來源</p>
+              <div class="progress my-2">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"></div>
+              </div>
+              <p class="h6">Facebook 來源</p>
+              <div class="progress my-2">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 37%"></div>
+              </div>
+              <p class="h6">無法追蹤</p>
+              <div class="progress my-2">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 mt-4">
+        <div class="card h-100">
+          <div class="card-header">瀏覽器</div>
+          <div class="card-body d-flex align-items-center">
+            <canvas class="chart-item">
+
+            </canvas>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-4 mt-4">
+    <div class="card">
+      <div class="card-header">月營運狀態</div>
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div class="d-inline-flex">
+            <select name="" id="" class="form-control form-control-sm">
+              <option value="9月">9月</option>
+              <option value="10月">10月</option>
+              <option value="11月">11月</option>
+              <option value="12月">12月</option>
+            </select>
+          </div>
+          <div class="btbbtn d-inline-flex pb-3">
+            <button type="button" class="btn btn-sm btn-outline-secondary ml-2">下載報表</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary ml-2">訂單管理</button>
+          </div>
+        </div>
+
+        <table class="table table-hover text-center ">
+          <!--table-responsive-->
+          <thead>
+            <tr>
+              <th scope="col">日期</th>
+              <th scope="col">訂單數</th>
+              <th scope="col">退費數</th>
+              <th scope="col">出貨數</th>
+              <th scope="col">有問題貨品</th>
+              <th scope="col" class="text-right">營業額</th>
+              <th scope="col" class="text-right">淨利潤</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">9/1</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td scope="row">9/2</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td scope="row">9/3</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td scope="row">9/4</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td scope="row">9/5</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td scope="row">9/6</td>
+              <td>300</td>
+              <td>1</td>
+              <td>250</td>
+              <td>3</td>
+              <td class="text-right">256,000</td>
+              <td class="text-right">168,000</td>
+            </tr>
+            <tr>
+              <td class="text-right" colspan="6">月總營收</td>
+              <td class="text-right">3750500</td>
+            </tr>
+            <tr>
+              <td class="text-right" colspan="6">月總淨利潤</td>
+              <td class="text-right">2,140,500</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination d-flex justify-content-center mt-3">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="index.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="list.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="list.html">Next</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <footer class="bg-light py-3">
+    <p class="text-secondary text-center mb-0">HexSchool後台管理系統</p>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+</body>
+
+</html>
